@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="https://kit.fontawesome.com/06ac667189.js" crossorigin="anonymous"></script>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+
+    </head>
+    <body>
+        <div class="container"></div>
+            <form class="row g-0">
+            <div class="col-9 my-4 mx-auto border rounded mx-5 bg-white">
+                <div class="row g-0" style="height: 45px;">
+                    <div class="col bg-light border rounded-top">
+                        <h1 class="fs-4 p-1">Payment form example</h1>
+                    </div>
+                </div>
+                <div class="m-4">
+                    <div class="row">
+                        <div class="col bg-danger bg-gradient bg-success border border-danger rounded m-3 d-flex align-items-center" style="--bs-bg-opacity: .2;">
+                            <p>Some fields are missing</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <label for="cardN">Card #</label>
+                            <input id="cardN" type="text" class="form-control" pattern="[0-9]{13,16}" maxlength=16 placeholder="XXXXXXXXXXXXXXXX" required>
+                        </div>
+                        <div class="col">
+                            <label for="CVC">CVC #</label>
+                            <input id="CVC" type="text" class="form-control" maxlength=4 size=4 placeholder="0000" required>
+                        </div>
+                        <div class="col">
+                            <label for="amount">Amount</label>
+                            <input id="amount" type="text" class="form-control" pattern="(\d{3})([\.])(\d{2})" maxlength=5 size=5 placeholder="Amount" required>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <label for="name">First Name</label>
+                            <input id="name" type="text" class="form-control" required>
+                        </div>
+                        <div class="col">
+                            <label for="lastName">Last Name</label>
+                            <input id="lastName" type="text" class="form-control" required>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-6">
+                            <label for="city">City</label>
+                            <input id="city" type="text" class="form-control" required>
+                        </div>
+                        <div class="col-3">
+                            <label>State</label>
+                            <select class="form-select form-select mb-3 form-control" required>
+                                <option value="select">Pick a State</option>
+                            </select>
+                        </div>
+                        <div class="col-3">
+                            <label for="code">Postal Code</label>
+                            <input id="code" type="text" class="form-control" maxlength=5 size=5 required>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-3">
+                            <label>We accept:</label>
+                            <div class="text-bg-secondary p-1 rounded h-25 d-flex justify-content-center" required>
+                                <div class="form-check-inline">
+                                    <input type="radio" Class="form-check-input" id="MC">
+                                    <label for="MC"><i class="fa-brands fa-cc-mastercard"></i></label>
+                                </div>
+                                <div class="form-check-inline">
+                                    <input type="radio" Class="form-check-input" id="VS">
+                                    <label for="VS"><i class="fa-brands fa-cc-visa"></i></label>
+                                </div>
+                                <div class="form-check-inline">
+                                    <input type="radio" Class="form-check-input" id="CC">
+                                    <label for="CC"><i class="fa-brands fa-cc-diners-club"></i></label>
+                                </div>
+                                <div class="form-check-inline">
+                                    <input type="radio" Class="form-check-input" id="AE">
+                                    <label for="AE"><i class="fa-brands fa-cc-amex"></i></label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6 offset-3">
+                            <lable for="message">Message</lable>
+                            <input type="textarea" id="message" class="form-control" style="height: 100px;">
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-light border">
+                    <button>cancel</button>
+                    <button>Send</button>
+                </div>
+            </div>
+            </form>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+    </body>
+    </body>
+</html>
